@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "rs-e-tron-gt-carbon",
+    "title": "RS e-tron GT Carbon",
+    "make": "Audi",
+    "model": "RS e-tron GT",
+    "year": 2024,
+    "mileage": 1200,
+    "price": 149950,
+    "status": "Available",
+    "exteriorColor": "Tactical Green Matte",
+    "interiorColor": "Black Valcona Leather",
+    "transmission": "Automatic (2-speed)",
+    "engine": "Dual Electric Motor",
+    "power": "646 bhp",
+    "coverImage": "/images/stock/rs-etron-gt-cover.jpg",
+    "gallery": [
+      "/images/stock/rs-etron-gt-01.jpg",
+      "/images/stock/rs-etron-gt-02.jpg",
+      "/images/stock/rs-etron-gt-03.jpg"
+    ],
+    "options": ["Carbon Exterior Package", "Sports Seats Pro", "Full Massage", "Night Vision"],
+    "description": "An exceptional early-ownership RS e-tron GT finished in an exclusive Tactical Green Matte wrap by our studio. This car represents the absolute pinnacle of electric grand-touring performance."
+  },
+  {
+    "slug": "g63-amg-widebody",
+    "title": "G63 AMG Widebody Edition",
+    "make": "Mercedes-Benz",
+    "model": "G63 AMG",
+    "year": 2023,
+    "mileage": 4800,
+    "price": 219500,
+    "status": "Reserved",
+    "exteriorColor": "Obsidian Black Metallic",
+    "interiorColor": "Platinum White Leather",
+    "transmission": "9G-TRONIC",
+    "engine": "4.0L Biturbo V8",
+    "power": "585 bhp",
+    "coverImage": "/images/stock/g63-widebody-cover.jpg",
+    "gallery": [
+      "/images/stock/g63-widebody-01.jpg",
+      "/images/stock/g63-widebody-02.jpg"
+    ],
+    "options": ["Widebody Flare Kit", "22″ Forged Wheels", "Chrome Delete", "Ceramic Coat"],
+    "description": "Studio-prepared G63 with our full widebody conversion fitted. Fully detailed and ceramic coated ready for immediate collection."
+  },
+  {
+    "slug": "defender-v8-carpathian",
+    "title": "Defender V8 Carpathian",
+    "make": "Land Rover",
+    "model": "Defender 110 V8",
+    "year": 2024,
+    "mileage": 650,
+    "price": 189950,
+    "status": "Available",
+    "exteriorColor": "Carpathian Grey",
+    "interiorColor": "Ebony Leather",
+    "transmission": "8-speed Automatic",
+    "engine": "5.0L Supercharged V8",
+    "power": "525 bhp",
+    "coverImage": "/images/stock/defender-v8-cover.jpg",
+    "gallery": [
+      "/images/stock/defender-v8-01.jpg",
+      "/images/stock/defender-v8-02.jpg",
+      "/images/stock/defender-v8-03.jpg"
+    ],
+    "options": ["SVX Pack", "Sliding Panoramic Roof", "Meridian Sound", "Air Suspension"],
+    "description": "Near-new Defender V8 in the rare Carpathian Grey. Studio-fitted with satin-black exterior graphics, underbody protection and all-terrain tyres."
+  },
+  {
+    "slug": "m5-competition-touring",
+    "title": "M5 Competition Touring",
+    "make": "BMW",
+    "model": "M5 Competition Touring",
+    "year": 2024,
+    "mileage": 2200,
+    "price": 134500,
+    "status": "Sold",
+    "exteriorColor": "Dravit Grey Metallic",
+    "interiorColor": "Merino Kyalami Orange",
+    "transmission": "8-speed M Steptronic",
+    "engine": "4.4L M TwinPower V8",
+    "power": "626 bhp",
+    "coverImage": "/images/stock/m5t-dravit-cover.jpg",
+    "gallery": [
+      "/images/stock/m5t-dravit-01.jpg",
+      "/images/stock/m5t-dravit-02.jpg"
+    ],
+    "options": ["Carbon Ceramic Brakes", "Bowers & Wilkins Diamond", "Rear Entertainment"],
+    "description": "Stunning M5 Touring in the ultra-rare Dravit Grey, with contrasting Kyalami Orange Merino interior. Studio-prepared with full ceramic coating."
+  },
+  {
+    "slug": "macan-turbo-ev-agate",
+    "title": "Macan Turbo EV Agate",
+    "make": "Porsche",
+    "model": "Macan Turbo Electric",
+    "year": 2024,
+    "mileage": 900,
+    "price": 108500,
+    "status": "Available",
+    "exteriorColor": "Agate Grey Metallic",
+    "interiorColor": "Bordeaux Red Leather",
+    "transmission": "2-speed Automatic",
+    "engine": "Dual Electric Motor",
+    "power": "630 bhp (overboost)",
+    "coverImage": "/images/stock/macan-ev-cover.jpg",
+    "gallery": [
+      "/images/stock/macan-ev-01.jpg",
+      "/images/stock/macan-ev-02.jpg"
+    ],
+    "options": ["Sport Design Package", "Panoramic Fixed Glass Roof", "Surround View", "BOSE Sound"],
+    "description": "The all-new Macan Turbo EV in a striking Agate Grey and Bordeaux Red specification. Studio-sourced with full ceramic protection applied."
+  }
+]

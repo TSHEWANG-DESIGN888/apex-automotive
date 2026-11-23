@@ -1,0 +1,104 @@
+{
+  "studio": {
+    "name": "Apex Automotive",
+    "tagline": "For Those Who Refuse Ordinary",
+    "phone": "+44 (0)1234 567890",
+    "email": "hello@apexautomotive.co.uk",
+    "address": {
+      "street": "Unit 7, Prestige Park",
+      "city": "Cheshire",
+      "postcode": "CW1 4XX",
+      "country": "United Kingdom"
+    },
+    "social": {
+      "instagram": "https://instagram.com/apexautomotive",
+      "facebook": "https://facebook.com/apexautomotive",
+      "youtube": "https://youtube.com/@apexautomotive"
+    }
+  },
+  "hero": {
+    "eyebrow": "Luxury Automotive Customisation",
+    "headline": "Where Vision\nMeets\nPerfection",
+    "subheading": "Every build is a singular work of craft, engineered to your exact intention."
+  },
+  "approach": {
+    "heading": "Our approach to every build",
+    "subheading": "We don't follow trends. We set them — one commission at a time.",
+    "marqueeItems": [
+      "Bodystyling", "Interior", "Wheels", "Lighting", "Exhaust Systems", "Paint Protection", 
+      "Ceramic Coating", "Window Tinting", "Carbon Fibre", "Chrome Delete",
+      "Bodystyling", "Interior", "Wheels", "Lighting", "Exhaust Systems", "Paint Protection"
+    ]
+  },
+  "process": [
+    {
+      "step": "01",
+      "label": "Identity",
+      "title": "Understanding your vision",
+      "description": "Every great build begins with a conversation. We immerse ourselves in your aesthetic, your lifestyle and your ambitions — until your vision becomes ours.",
+      "cta": { "label": "Our Philosophy", "href": "/builds" }
+    },
+    {
+      "step": "02",
+      "label": "Insight",
+      "title": "Engineering the detail",
+      "description": "With vision established, our specialists engineer every element from first principles. No compromises, no shortcuts — only solutions that exceed expectation.",
+      "cta": { "label": "Our Builds", "href": "/builds" }
+    },
+    {
+      "step": "03",
+      "label": "Cohesion",
+      "title": "Delivered as one",
+      "description": "The final reveal is never a surprise to us — only to those who see it. Every component, every finish, every detail cohere into one seamless, extraordinary result.",
+      "cta": { "label": "Contact Us", "href": "/contact" }
+    }
+  ],
+  "statement": {
+    "heading": "Precision is not a feature. It is the foundation.",
+    "body": "In a world of mass production and digital approximation, we remain committed to the irreplaceable power of hand-finished craft. Each vehicle that leaves our studio is a testament to what becomes possible when skill, patience and singular intention align.",
+    "cta": { "label": "Discover Our Work", "href": "/builds" }
+  },
+  "services": [
+    {
+      "id": "bodystyling",
+      "label": "01",
+      "title": "Bodystyling",
+      "description": "Full resprays, vinyl wraps, body kits, aero additions and chrome deletes. We transform the exterior silhouette while maintaining — and often enhancing — factory-level fit and finish."
+    },
+    {
+      "id": "interior",
+      "label": "02",
+      "title": "Interior",
+      "description": "Bespoke leather re-trims, Alcantara headlinings, custom dashboard inlays and full cabin redesigns. Your interior should be as individual as you are."
+    },
+    {
+      "id": "wheels",
+      "label": "03",
+      "title": "Wheels",
+      "description": "Forged and cast wheel sourcing, powder coating, refurbishment and fitment. We work with the world's finest wheel manufacturers to find or create the perfect set."
+    },
+    {
+      "id": "lighting",
+      "label": "04",
+      "title": "Lighting",
+      "description": "Smoked units, full LED conversions, ambient interior lighting upgrades and bespoke light-bar fabrication. Lighting that commands attention and enhances safety."
+    },
+    {
+      "id": "exhaust",
+      "label": "05",
+      "title": "Exhaust",
+      "description": "Performance exhaust systems from Akrapovič, Capristo, Milltek and beyond. We also fabricate bespoke stainless and titanium systems to your exact specification."
+    },
+    {
+      "id": "protection",
+      "label": "06",
+      "title": "Protection",
+      "description": "Paint Protection Film (PPF), ceramic coatings up to 10H, window tinting and underbody protection. Preserve your investment without compromising its appearance."
+    }
+  ],
+  "finalCta": {
+    "heading": "Are you ready to\nRefuse Ordinary?",
+    "subheading": "Every extraordinary build begins with a single conversation.",
+    "cta": { "label": "Begin Your Build", "href": "/contact" }
+  }
+}

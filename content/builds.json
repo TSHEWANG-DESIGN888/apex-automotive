@@ -1,0 +1,141 @@
+[
+  {
+    "slug": "rs6-avant-midnight",
+    "title": "RS6 Avant Midnight Edition",
+    "make": "Audi",
+    "model": "RS6 Avant",
+    "year": 2023,
+    "services": ["Bodystyling", "Wheels", "Protection"],
+    "coverImage": "/images/builds/rs6-midnight-cover.jpg",
+    "gallery": [
+      "/images/builds/rs6-midnight-01.jpg",
+      "/images/builds/rs6-midnight-02.jpg",
+      "/images/builds/rs6-midnight-03.jpg",
+      "/images/builds/rs6-midnight-04.jpg"
+    ],
+    "description": "A comprehensive dark aesthetic transformation of this RS6 Avant. We began with a full respray in Midnight Obsidian — our proprietary satin-finish deep black — complemented by carbon-fibre front splitter, side skirt extensions and rear diffuser. Twenty-two-inch forged monobloc wheels replace the factory setup, wrapped in bespoke tyres. The exterior is sealed beneath a full-coverage paint-protection film with a ceramic top coat.",
+    "specs": {
+      "Engine": "4.0L Twin-Turbo V8",
+      "Power": "630 bhp",
+      "Exterior": "Midnight Obsidian Satin",
+      "Wheels": "22″ Forged Monobloc",
+      "Film": "Full PPF + Ceramic"
+    },
+    "featured": true
+  },
+  {
+    "slug": "g63-monochrome",
+    "title": "G63 AMG Monochrome",
+    "make": "Mercedes-Benz",
+    "model": "G63 AMG",
+    "year": 2022,
+    "services": ["Bodystyling", "Interior", "Wheels"],
+    "coverImage": "/images/builds/g63-mono-cover.jpg",
+    "gallery": [
+      "/images/builds/g63-mono-01.jpg",
+      "/images/builds/g63-mono-02.jpg",
+      "/images/builds/g63-mono-03.jpg"
+    ],
+    "description": "The iconic G-Wagen received a head-to-toe monochrome treatment. Factory chrome brightwork was deleted and colour-coded to the hand-painted Obsidian Black Metallic body. Inside, we re-trimmed every surface in quilted Nappa leather with contrasting micro-stitching, reshaped the centre console and fitted bespoke aluminium tread-plates bearing the owner's initials.",
+    "specs": {
+      "Engine": "4.0L Biturbo V8",
+      "Power": "585 bhp",
+      "Exterior": "Obsidian Black Metallic",
+      "Interior": "Quilted Nappa Leather",
+      "Chrome Delete": "Full"
+    },
+    "featured": true
+  },
+  {
+    "slug": "defender-overland",
+    "title": "Defender 110 Overland",
+    "make": "Land Rover",
+    "model": "Defender 110",
+    "year": 2023,
+    "services": ["Bodystyling", "Protection", "Lighting"],
+    "coverImage": "/images/builds/defender-ol-cover.jpg",
+    "gallery": [
+      "/images/builds/defender-ol-01.jpg",
+      "/images/builds/defender-ol-02.jpg",
+      "/images/builds/defender-ol-03.jpg"
+    ],
+    "description": "Purpose-built for the client who refuses to compromise between capability and elegance. A full-wrap in desert sand matte was paired with a bespoke roof rack, rock-slider side steps and a winch-ready front bumper, all finished in textured satin black. The LED lightbar and spot-lamp array are concealed behind a custom grille insert that blends seamlessly with the factory face.",
+    "specs": {
+      "Engine": "3.0L Ingenium D300",
+      "Power": "300 bhp",
+      "Wrap": "Desert Sand Matte",
+      "Lighting": "Concealed LED Array",
+      "Protection": "Full PPF Skid Zones"
+    },
+    "featured": false
+  },
+  {
+    "slug": "m3-touring-satin-green",
+    "title": "M3 Touring Isle of Man",
+    "make": "BMW",
+    "model": "M3 Touring Competition",
+    "year": 2023,
+    "services": ["Bodystyling", "Exhaust", "Wheels"],
+    "coverImage": "/images/builds/m3t-green-cover.jpg",
+    "gallery": [
+      "/images/builds/m3t-green-01.jpg",
+      "/images/builds/m3t-green-02.jpg",
+      "/images/builds/m3t-green-03.jpg"
+    ],
+    "description": "One of the most striking M3 Tourings in private ownership. We colour-shifted this Competition into a satin-finish Isle of Man Green deep wrap, fitted a full Akrapovič titanium exhaust system and installed a staggered set of 20/21-inch BBS FI-R wheels. The rear diffuser and kidney-grille surrounds were painted gloss black to anchor the aggressive stance.",
+    "specs": {
+      "Engine": "3.0L S58 Twin-Turbo",
+      "Power": "530 bhp",
+      "Wrap": "Isle of Man Green Satin",
+      "Wheels": "BBS FI-R 20/21″",
+      "Exhaust": "Akrapovič Titanium"
+    },
+    "featured": false
+  },
+  {
+    "slug": "panamera-turbo-shadow",
+    "title": "Panamera Turbo Shadow",
+    "make": "Porsche",
+    "model": "Panamera Turbo S E-Hybrid",
+    "year": 2023,
+    "services": ["Interior", "Wheels", "Protection"],
+    "coverImage": "/images/builds/panamera-shadow-cover.jpg",
+    "gallery": [
+      "/images/builds/panamera-shadow-01.jpg",
+      "/images/builds/panamera-shadow-02.jpg"
+    ],
+    "description": "The Panamera's executive grand-tourer brief taken to its absolute limit. A complete interior re-trim in two-tone midnight-blue and graphite quilted leather, paired with piano-black alcantara headlining and bespoke door-card inserts. Twenty-one-inch Exclusive Design wheels in satin black complement the factory Volcano Grey Metallic exterior, sealed beneath our premium ceramic coating.",
+    "specs": {
+      "Engine": "4.0L Twin-Turbo V8 Hybrid",
+      "Power": "700 bhp",
+      "Interior": "Two-tone Quilted Leather",
+      "Wheels": "21″ Exclusive Design",
+      "Coating": "Ceramic Pro 9H"
+    },
+    "featured": false
+  },
+  {
+    "slug": "cullinan-black-badge-bespoke",
+    "title": "Cullinan Black Badge Bespoke",
+    "make": "Rolls-Royce",
+    "model": "Cullinan Black Badge",
+    "year": 2024,
+    "services": ["Interior", "Bodystyling", "Protection"],
+    "coverImage": "/images/builds/cullinan-bb-cover.jpg",
+    "gallery": [
+      "/images/builds/cullinan-bb-01.jpg",
+      "/images/builds/cullinan-bb-02.jpg",
+      "/images/builds/cullinan-bb-03.jpg",
+      "/images/builds/cullinan-bb-04.jpg"
+    ],
+    "description": "An extraordinary commission for a client who already owned extraordinary taste. Working alongside the client over three months, we specified and delivered a complete bespoke interior featuring hand-embroidered star-mapping headlining, solid silver inlay marquetry panels and a complete leather re-colour in a shade mixed exclusively for the owner. The exterior received our finest ceramic paint correction and 10H coating application.",
+    "specs": {
+      "Engine": "6.75L Twin-Turbo V12",
+      "Power": "600 bhp",
+      "Interior": "Full Bespoke Commission",
+      "Headlining": "Hand-embroidered Star Map",
+      "Coating": "10H Ceramic"
+    },
+    "featured": true
+  }
+]
