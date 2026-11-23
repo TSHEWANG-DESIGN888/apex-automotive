@@ -116,14 +116,15 @@ export default function HomePage() {
             );
           });
 
-          // 3. Pinned 3-Step Sequence
-          if (processRef.current) {
+          // 3. Pinned 3-Step Sequence (desktop only to prevent mobile scroll lock)
+          if (processRef.current && window.innerWidth >= 1024) {
             const stepsCount = siteData.process.length;
             ScrollTrigger.create({
               trigger: processRef.current,
               start: 'top top',
-              end: `+=${stepsCount * 120}%`,
+              end: `+=${stepsCount * 100}%`,
               pin: true,
+              anticipatePin: 1,
               scrub: 0.5,
               onUpdate: (self) => {
                 const nextStep = Math.min(

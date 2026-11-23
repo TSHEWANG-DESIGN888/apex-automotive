@@ -152,10 +152,11 @@ export function Header() {
                 <li
                   key={link.href}
                   style={{
-                    transitionDelay: isOpen ? `${i * 80}ms` : '0ms',
                     transform: isOpen ? 'translateY(0)' : 'translateY(40px)',
                     opacity: isOpen ? 1 : 0,
-                    transition: `transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1)`,
+                    transition: isOpen
+                      ? `transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) ${i * 80}ms, opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1) ${i * 80}ms`
+                      : 'transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0ms, opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0ms',
                   }}
                 >
                   <Link
@@ -175,9 +176,8 @@ export function Header() {
           <div
             className="mt-auto flex flex-col sm:flex-row sm:items-end justify-between gap-8"
             style={{
-              transitionDelay: isOpen ? '400ms' : '0ms',
               opacity: isOpen ? 1 : 0,
-              transition: 'opacity 0.6s ease',
+              transition: isOpen ? 'opacity 0.6s ease 400ms' : 'opacity 0.6s ease 0ms',
             }}
           >
             <div>

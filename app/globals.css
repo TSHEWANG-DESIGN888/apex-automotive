@@ -9,10 +9,10 @@
   --font-inter: 'Inter', system-ui, sans-serif;
   --color-bg: #0c0c0c;
   --color-surface: #141414;
-  --color-white: #ffffff;
-  --color-muted: rgba(255, 255, 255, 0.6);
-  --color-gold: #ffffff;
-  --color-gold-hover: #e5e5e5;
+  --color-white: #f0ede8;
+  --color-muted: rgba(240, 237, 232, 0.55);
+  --color-gold: #c9a96e;
+  --color-gold-hover: #e2c48a;
   --color-border: rgba(255, 255, 255, 0.08);
   --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -30,11 +30,11 @@ html {
 
 body {
   background-color: var(--color-bg);
-  color: var(--color-white);
+  color: #f0ede8;
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* Skip Link */
@@ -44,7 +44,7 @@ body {
   left: 1rem;
   z-index: 9999;
   padding: 0.75rem 1.5rem;
-  background: #ffffff;
+  background: #c9a96e;
   color: #0c0c0c;
   font-size: 0.875rem;
   font-weight: 600;
@@ -59,13 +59,13 @@ body {
 
 /* Focus Styles */
 *:focus-visible {
-  outline: 2px solid #ffffff;
+  outline: 2px solid #c9a96e;
   outline-offset: 4px;
 }
 
 /* Selection */
 ::selection {
-  background: #ffffff;
+  background: #c9a96e;
   color: #0c0c0c;
 }
 
@@ -77,7 +77,7 @@ body {
   background: var(--color-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: #333333;
+  background: rgba(201, 169, 110, 0.35);
   border-radius: 2px;
 }
 
@@ -99,7 +99,7 @@ body {
 .custom-cursor {
   width: 10px;
   height: 10px;
-  background: #ffffff;
+  background: #c9a96e;
   border-radius: 50%;
   position: fixed;
   top: 0;
@@ -113,7 +113,7 @@ body {
 .custom-cursor-ring {
   width: 36px;
   height: 36px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(201, 169, 110, 0.5);
   border-radius: 50%;
   position: fixed;
   top: 0;
@@ -135,7 +135,7 @@ body {
   left: 0;
   top: 50%;
   height: 2px;
-  background: #ffffff;
+  background: #c9a96e;
   transform: translateY(-50%);
   width: 0%;
 }
@@ -194,7 +194,7 @@ html.lenis {
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #f0ede8;
 }
 
 .section-pad {
@@ -233,7 +233,7 @@ html.lenis {
 
 /* Ghost text outline */
 .text-outline {
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  -webkit-text-stroke: 1px rgba(240, 237, 232, 0.4);
   color: transparent;
 }
 
@@ -244,8 +244,8 @@ html.lenis {
   gap: 0.75rem;
   padding: 0.875rem 2rem;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  color: #ffffff;
+  border: 1px solid rgba(201, 169, 110, 0.4);
+  color: #f0ede8;
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -256,9 +256,9 @@ html.lenis {
 }
 
 .btn-primary:hover {
-  background: #ffffff;
+  background: #c9a96e;
   color: #0c0c0c;
-  border-color: #ffffff;
+  border-color: #c9a96e;
 }
 
 .btn-primary svg {

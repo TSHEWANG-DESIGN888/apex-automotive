@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Image from 'next/image';
 
 interface BuildGalleryProps {
@@ -16,11 +16,20 @@ export function BuildGallery({ images, title }: BuildGalleryProps) {
   const prevImage = useCallback(() => setLightboxIndex(i => i !== null ? (i - 1 + images.length) % images.length : null), [images.length]);
   const nextImage = useCallback(() => setLightboxIndex(i => i !== null ? (i + 1) % images.length : null), [images.length]);
 
-  const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
-    if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowLeft') prevImage();
-    if (e.key === 'ArrowRight') nextImage();
-  }, [closeLightbox, prevImage, nextImage]);
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === 'ArrowRight') nextImage();
+    };
+    window.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [lightboxIndex, closeLightbox, prevImage, nextImage]);
 
   return (
     <>
@@ -61,7 +70,6 @@ export function BuildGallery({ images, title }: BuildGalleryProps) {
           role="dialog"
           aria-modal="true"
           aria-label={`Image ${lightboxIndex + 1} of ${images.length}`}
-          onKeyDown={handleKeyDown}
           tabIndex={-1}
           onClick={closeLightbox}
         >

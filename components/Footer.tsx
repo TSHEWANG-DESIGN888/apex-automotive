@@ -14,18 +14,18 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-apex-border mt-0" role="contentinfo">
-      <div className="container-site py-16">
+    <footer className="border-t border-apex-border mt-0 bg-apex-black" role="contentinfo">
+      <div className="container-site pt-20 pb-28 md:pb-36">
         {/* Top row */}
-        <div className="flex flex-col md:flex-row md:items-start justify-between gap-10 mb-12">
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-10 mb-14">
           {/* Brand */}
           <div className="max-w-xs">
             <Link href="/" className="inline-block mb-4 group">
-              <span className="font-display text-2xl font-semibold tracking-[0.15em] text-apex-white group-hover:text-apex-gold transition-colors">
+              <span className="font-display text-2xl font-semibold tracking-[0.15em] text-white group-hover:text-white/80 transition-colors">
                 APEX
               </span>
-              <span className="ml-2 inline-block w-6 h-px bg-apex-gold mx-1" />
-              <span className="font-sans text-xs tracking-[0.25em] uppercase text-apex-muted group-hover:text-apex-gold transition-colors">
+              <span className="ml-2 inline-block w-6 h-px bg-white mx-1" />
+              <span className="font-sans text-xs tracking-[0.25em] uppercase text-apex-muted group-hover:text-white transition-colors">
                 Automotive
               </span>
             </Link>
@@ -37,12 +37,12 @@ export function Footer() {
 
           {/* Nav links */}
           <nav aria-label="Footer navigation">
-            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-12 gap-y-3">
+            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-x-12 gap-y-3.5">
               {footerLinks.map(link => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="label-uppercase text-apex-muted hover:text-apex-gold transition-colors duration-300"
+                    className="label-uppercase text-apex-muted hover:text-white transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -53,17 +53,17 @@ export function Footer() {
 
           {/* Contact */}
           <div className="text-sm">
-            <p className="label-uppercase mb-3">Studio</p>
+            <p className="label-uppercase mb-3 text-white">Studio</p>
             <address className="not-italic text-apex-muted leading-relaxed">
               {siteData.studio.address.street}<br />
               {siteData.studio.address.city}, {siteData.studio.address.postcode}<br />
               {siteData.studio.address.country}
             </address>
             <div className="mt-4 space-y-1">
-              <a href={`tel:${siteData.studio.phone}`} className="block text-apex-muted hover:text-apex-gold transition-colors">
+              <a href={`tel:${siteData.studio.phone}`} className="block text-apex-muted hover:text-white transition-colors">
                 {siteData.studio.phone}
               </a>
-              <a href={`mailto:${siteData.studio.email}`} className="block text-apex-muted hover:text-apex-gold transition-colors">
+              <a href={`mailto:${siteData.studio.email}`} className="block text-apex-muted hover:text-white transition-colors">
                 {siteData.studio.email}
               </a>
             </div>
@@ -71,14 +71,14 @@ export function Footer() {
         </div>
 
         {/* Bottom row */}
-        <div className="border-t border-apex-border pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+        <div className="border-t border-apex-border pt-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
             <p className="text-xs text-apex-muted">
               © {year} {siteData.studio.name}. All rights reserved.
             </p>
-            <span className="hidden sm:inline-block w-px h-3 bg-apex-border" aria-hidden="true" />
-            <p className="label-uppercase tracking-[0.2em] text-[10px] text-apex-gold font-medium">
-              Designed by TSEWANG 888
+            <span className="hidden sm:inline-block w-px h-3.5 bg-apex-border" aria-hidden="true" />
+            <p className="font-sans text-xs uppercase tracking-[0.2em] text-white font-semibold">
+              Designed by <span className="text-white font-bold tracking-[0.25em]">TSEWANG 888</span>
             </p>
           </div>
           <div className="flex items-center gap-6">
@@ -88,7 +88,7 @@ export function Footer() {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="label-uppercase text-apex-muted hover:text-apex-gold transition-colors"
+                className="label-uppercase text-apex-muted hover:text-white transition-colors"
                 aria-label={`Follow us on ${name}`}
               >
                 {name}
