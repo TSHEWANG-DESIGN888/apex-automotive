@@ -393,10 +393,11 @@ export default function HomePage() {
         </div>
 
         {/* Step indicator bars */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3" aria-hidden="true">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3" role="group" aria-label="Process step navigation">
           {siteData.process.map((_, i) => (
             <button
               key={i}
+              type="button"
               onClick={() => setActiveStep(i)}
               className={`h-0.5 transition-all duration-400 ${
                 i === activeStep ? 'w-10 bg-apex-gold' : 'w-4 bg-apex-border hover:bg-apex-muted'

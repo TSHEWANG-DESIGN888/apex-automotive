@@ -13,13 +13,13 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: true }, { status: 200 }); // Silent drop
     }
 
-    // 2. Rate limiting check (1 submission per 45s per client IP)
+    // 2. Rate limiting check (lenient 2s debounce for customer testing)
     const forwardedFor = request.headers.get('x-forwarded-for');
     const ip = forwardedFor ? forwardedFor.split(',')[0].trim() : 'local';
     const lastTime = rateLimitMap.get(ip) || 0;
     const now = Date.now();
 
-    if (now - lastTime < 45000) {
+    if (now - lastTime < 2000) {
       return NextResponse.json(
         { error: 'Please wait a moment before sending another enquiry.' },
         { status: 429 }

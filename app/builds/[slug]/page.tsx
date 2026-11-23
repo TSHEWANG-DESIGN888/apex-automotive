@@ -67,6 +67,7 @@ export default async function BuildPage({ params }: Props) {
 
   const images = galleryImages[slug] || galleryImages.default;
   const heroImg = heroImages[slug] || heroImages['rs6-avant-midnight'];
+  const commissionHref = `/contact?vehicle=${encodeURIComponent(build.title)}&subject=${encodeURIComponent(`Build Commission: ${build.title}`)}`;
 
   return (
     <>
@@ -120,7 +121,7 @@ export default async function BuildPage({ params }: Props) {
               {build.description}
             </p>
             <div className="mt-10">
-              <Link href="/contact" className="btn-primary">
+              <Link href={commissionHref} className="btn-primary">
                 Commission Your Own Build
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />

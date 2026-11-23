@@ -40,6 +40,7 @@ export function StockGrid() {
             {allStatuses.map(s => (
               <button
                 key={s}
+                type="button"
                 onClick={() => setActiveStatus(s)}
                 className={`px-4 py-2 label-uppercase transition-all duration-300 border ${
                   activeStatus === s

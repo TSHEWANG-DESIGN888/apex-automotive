@@ -40,12 +40,14 @@ export function CookieBanner() {
         </p>
         <div className="flex items-center gap-3 shrink-0">
           <button
+            type="button"
             onClick={decline}
             className="label-uppercase text-apex-muted hover:text-apex-white transition-colors px-4 py-2"
           >
             Decline
           </button>
           <button
+            type="button"
             onClick={accept}
             className="btn-primary"
           >

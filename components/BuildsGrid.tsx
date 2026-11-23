@@ -43,29 +43,23 @@ export function BuildsGrid({ builds }: { builds: Build[] }) {
     const initReveal = async () => {
       try {
         const { gsap } = await import('gsap');
-        const { ScrollTrigger } = await import('gsap/ScrollTrigger');
-        gsap.registerPlugin(ScrollTrigger);
-
         const cards = document.querySelectorAll('[data-build-card]');
-        cards.forEach((card, i) => {
-          gsap.fromTo(card,
-            { opacity: 0, y: 40 },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 0.8,
-              ease: 'power3.out',
-              delay: i * 0.08,
-              scrollTrigger: {
-                trigger: card,
-                start: 'top 85%',
-                once: true,
-              },
-            }
-          );
-        });
+        gsap.fromTo(cards,
+          { opacity: 0, y: 20 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            ease: 'power2.out',
+            stagger: 0.05,
+          }
+        );
       } catch (e) {
-        // GSAP not loaded
+        const cards = document.querySelectorAll('[data-build-card]');
+        cards.forEach(c => {
+          (c as HTMLElement).style.opacity = '1';
+          (c as HTMLElement).style.transform = 'none';
+        });
       }
     };
     initReveal();
@@ -80,6 +74,7 @@ export function BuildsGrid({ builds }: { builds: Build[] }) {
             {allServices.map(s => (
               <button
                 key={s}
+                type="button"
                 onClick={() => setActiveService(s)}
                 className={`px-4 py-2 label-uppercase transition-all duration-300 border ${
                   activeService === s

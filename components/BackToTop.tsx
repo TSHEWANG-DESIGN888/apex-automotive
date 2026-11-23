@@ -17,6 +17,7 @@ export function BackToTop() {
 
   return (
     <button
+      type="button"
       onClick={scrollToTop}
       aria-label="Back to top"
       className={`fixed bottom-8 right-8 z-40 w-12 h-12 border border-apex-gold text-apex-gold flex items-center justify-center hover:bg-apex-gold hover:text-apex-black transition-all duration-300 ${

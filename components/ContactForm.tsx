@@ -157,7 +157,10 @@ function ContactFormInner() {
             type="text"
             autoComplete="name"
             value={form.name}
-            onChange={e => setForm(prev => ({ ...prev, name: e.target.value }))}
+            onChange={e => {
+              setForm(prev => ({ ...prev, name: e.target.value }));
+              if (errors.name) setErrors(prev => ({ ...prev, name: undefined }));
+            }}
             className={inputClass('name')}
             aria-required="true"
             aria-describedby={errors.name ? 'name-error' : undefined}
@@ -176,7 +179,10 @@ function ContactFormInner() {
             type="email"
             autoComplete="email"
             value={form.email}
-            onChange={e => setForm(prev => ({ ...prev, email: e.target.value }))}
+            onChange={e => {
+              setForm(prev => ({ ...prev, email: e.target.value }));
+              if (errors.email) setErrors(prev => ({ ...prev, email: undefined }));
+            }}
             className={inputClass('email')}
             aria-required="true"
             aria-describedby={errors.email ? 'email-error' : undefined}
@@ -261,7 +267,10 @@ function ContactFormInner() {
             id="message"
             rows={5}
             value={form.message}
-            onChange={e => setForm(prev => ({ ...prev, message: e.target.value }))}
+            onChange={e => {
+              setForm(prev => ({ ...prev, message: e.target.value }));
+              if (errors.message) setErrors(prev => ({ ...prev, message: undefined }));
+            }}
             className={`${inputClass('message')} resize-none`}
             aria-required="true"
             aria-describedby={errors.message ? 'message-error' : undefined}
@@ -272,11 +281,17 @@ function ContactFormInner() {
       </div>
 
       {/* Privacy */}
-      <p className="text-xs text-apex-muted mt-6 mb-8">
+      <p className="text-xs text-apex-muted mt-6 mb-4">
         By submitting this form you agree to our{' '}
         <a href="/legal#privacy" className="text-apex-gold hover:underline">Privacy Policy</a>.
         Your data is used solely to respond to your enquiry.
       </p>
+
+      {Object.keys(errors).length > 0 && (
+        <p className="text-red-400 text-xs mb-4" role="alert">
+          Please fill in all required fields marked with an asterisk (*).
+        </p>
+      )}
 
       <button
         type="submit"

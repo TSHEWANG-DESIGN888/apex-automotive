@@ -31,6 +31,7 @@ export function BuildGallery({ images, title }: BuildGalleryProps) {
             {images.map((src, i) => (
               <button
                 key={i}
+                type="button"
                 onClick={() => openLightbox(i)}
                 className="group relative block overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-apex-gold aspect-video"
                 aria-label={`View ${title} image ${i + 1} of ${images.length}`}
@@ -65,6 +66,7 @@ export function BuildGallery({ images, title }: BuildGalleryProps) {
           onClick={closeLightbox}
         >
           <button
+            type="button"
             onClick={closeLightbox}
             className="absolute top-6 right-6 text-apex-white hover:text-apex-gold transition-colors z-10"
             aria-label="Close gallery"
@@ -74,6 +76,7 @@ export function BuildGallery({ images, title }: BuildGalleryProps) {
             </svg>
           </button>
           <button
+            type="button"
             onClick={e => { e.stopPropagation(); prevImage(); }}
             className="absolute left-4 text-apex-white hover:text-apex-gold transition-colors z-10 p-3"
             aria-label="Previous image"
@@ -94,6 +97,7 @@ export function BuildGallery({ images, title }: BuildGalleryProps) {
             </p>
           </div>
           <button
+            type="button"
             onClick={e => { e.stopPropagation(); nextImage(); }}
             className="absolute right-4 text-apex-white hover:text-apex-gold transition-colors z-10 p-3"
             aria-label="Next image"

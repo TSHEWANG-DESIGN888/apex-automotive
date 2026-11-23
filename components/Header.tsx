@@ -101,6 +101,7 @@ export function Header() {
 
               {/* Navigate button */}
               <button
+                type="button"
                 onClick={toggleMenu}
                 className="flex items-center gap-3 label-uppercase text-apex-white hover:text-apex-gold transition-colors duration-300 group"
                 aria-expanded={isOpen}
@@ -159,6 +160,7 @@ export function Header() {
                 >
                   <Link
                     href={link.href}
+                    onClick={() => setIsOpen(false)}
                     className={`block font-display text-7xl sm:text-8xl md:text-9xl font-light leading-none tracking-tight hover:text-apex-gold transition-colors duration-300 ${
                       pathname === link.href ? 'text-apex-gold' : 'text-apex-white'
                     }`}
