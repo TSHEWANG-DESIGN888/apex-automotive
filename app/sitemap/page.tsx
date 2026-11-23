@@ -14,7 +14,7 @@ const staticPages = [
   { href: '/stock', label: 'Available Stock', description: 'Studio-prepared vehicles for immediate purchase' },
   { href: '/contact', label: 'Contact', description: 'Enquire about a build or vehicle' },
   { href: '/legal', label: 'Legal', description: 'Privacy Policy, Terms of Service and Cookie Policy' },
-  { href: '/sitemap', label: 'Sitemap', description: 'This page' },
+  { href: '/sitemap', label: 'Sitemap', description: 'Overview of all studio destinations' },
 ];
 
 export default function SitemapPage() {

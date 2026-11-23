@@ -71,20 +71,6 @@ export default async function BuildPage({ params }: Props) {
 
   return (
     <>
-      {/* Back link */}
-      <div className="fixed top-24 left-6 z-30">
-        <Link
-          href="/builds"
-          className="label-uppercase text-apex-muted hover:text-apex-white transition-colors flex items-center gap-2"
-          aria-label="Back to builds"
-        >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <line x1="19" y1="12" x2="5" y2="12" /><polyline points="12 19 5 12 12 5" />
-          </svg>
-          Builds
-        </Link>
-      </div>
-
       {/* Hero */}
       <section className="relative h-[80vh] overflow-hidden" aria-label={`${build.title} hero`}>
         <Image
@@ -95,7 +81,19 @@ export default async function BuildPage({ params }: Props) {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-apex-black via-apex-black/30 to-transparent" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-t from-apex-black via-apex-black/30 to-apex-black/50" aria-hidden="true" />
+        <div className="absolute top-28 left-0 right-0 container-site z-10">
+          <Link
+            href="/builds"
+            className="label-uppercase text-apex-muted hover:text-apex-gold transition-colors inline-flex items-center gap-2"
+            aria-label="Back to builds"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12" /><polyline points="12 19 5 12 12 5" />
+            </svg>
+            All Builds
+          </Link>
+        </div>
         <div className="absolute bottom-10 container-site">
           <div className="flex flex-wrap gap-2 mb-4">
             {build.services.map(s => (

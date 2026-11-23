@@ -164,7 +164,7 @@ function ContactFormInner() {
             className={inputClass('name')}
             aria-required="true"
             aria-describedby={errors.name ? 'name-error' : undefined}
-            placeholder="Your name"
+            placeholder="Name"
           />
           {errors.name && <p id="name-error" className="text-red-400 text-xs mt-1" role="alert">{errors.name}</p>}
         </div>
@@ -186,7 +186,7 @@ function ContactFormInner() {
             className={inputClass('email')}
             aria-required="true"
             aria-describedby={errors.email ? 'email-error' : undefined}
-            placeholder="your@email.com"
+            placeholder="Email address"
           />
           {errors.email && <p id="email-error" className="text-red-400 text-xs mt-1" role="alert">{errors.email}</p>}
         </div>
@@ -202,7 +202,7 @@ function ContactFormInner() {
             onChange={e => setForm(prev => ({ ...prev, phone: e.target.value }))}
             className={inputClass('phone')}
             aria-describedby={errors.phone ? 'phone-error' : undefined}
-            placeholder="+44 (0)1234 567890"
+            placeholder="Phone number"
           />
           {errors.phone && <p id="phone-error" className="text-red-400 text-xs mt-1" role="alert">{errors.phone}</p>}
         </div>
@@ -216,7 +216,7 @@ function ContactFormInner() {
             value={form.vehicleMake}
             onChange={e => setForm(prev => ({ ...prev, vehicleMake: e.target.value }))}
             className="w-full bg-transparent border-b border-apex-border py-3 text-apex-white placeholder-apex-muted text-sm outline-none transition-colors focus:border-apex-gold"
-            placeholder="e.g. Audi, BMW, Porsche"
+            placeholder="Make"
           />
         </div>
 
@@ -229,7 +229,7 @@ function ContactFormInner() {
             value={form.vehicleModel}
             onChange={e => setForm(prev => ({ ...prev, vehicleModel: e.target.value }))}
             className="w-full bg-transparent border-b border-apex-border py-3 text-apex-white placeholder-apex-muted text-sm outline-none transition-colors focus:border-apex-gold"
-            placeholder="e.g. RS6 Avant, G63 AMG, 911 Turbo S"
+            placeholder="Model"
           />
         </div>
 
@@ -274,7 +274,7 @@ function ContactFormInner() {
             className={`${inputClass('message')} resize-none`}
             aria-required="true"
             aria-describedby={errors.message ? 'message-error' : undefined}
-            placeholder="Tell us about your vehicle and what you have in mind..."
+            placeholder="Your message or build vision..."
           />
           {errors.message && <p id="message-error" className="text-red-400 text-xs mt-1" role="alert">{errors.message}</p>}
         </div>

@@ -23,38 +23,31 @@ export function CookieBanner() {
   if (!show) return null;
 
   return (
-    <div
+    <aside
       role="dialog"
       aria-label="Cookie consent"
       aria-live="polite"
-      className="fixed bottom-0 left-0 right-0 z-50 border-t border-apex-border bg-apex-surface/95 backdrop-blur-sm"
+      className="fixed bottom-6 right-6 z-50 max-w-sm border border-apex-border bg-apex-surface/95 backdrop-blur-md p-5 shadow-2xl"
     >
-      <div className="container-site py-5 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
-        <p className="text-sm text-apex-muted leading-relaxed max-w-2xl">
-          We use cookies to enhance your experience, analyse traffic and personalise content. 
-          By clicking "Accept", you consent to our use of cookies.{' '}
-          <a href="/legal#cookies" className="text-apex-gold hover:underline">
-            Learn more
-          </a>
-          .
-        </p>
-        <div className="flex items-center gap-3 shrink-0">
-          <button
-            type="button"
-            onClick={decline}
-            className="label-uppercase text-apex-muted hover:text-apex-white transition-colors px-4 py-2"
-          >
-            Decline
-          </button>
-          <button
-            type="button"
-            onClick={accept}
-            className="btn-primary"
-          >
-            Accept
-          </button>
-        </div>
+      <p className="text-xs text-apex-muted leading-relaxed mb-4">
+        We use essential cookies to provide an optimal browsing experience.
+      </p>
+      <div className="flex items-center gap-3">
+        <button
+          type="button"
+          onClick={accept}
+          className="btn-primary text-[10px] py-1.5 px-4"
+        >
+          Accept
+        </button>
+        <button
+          type="button"
+          onClick={decline}
+          className="label-uppercase text-[10px] text-apex-muted hover:text-apex-white transition-colors py-1.5 px-3"
+        >
+          Decline
+        </button>
       </div>
-    </div>
+    </aside>
   );
 }

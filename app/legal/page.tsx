@@ -98,14 +98,30 @@ We may update this Cookie Policy periodically. We encourage you to review this p
 function renderMarkdown(text: string) {
   const lines = text.trim().split('\n');
   return lines.map((line, i) => {
-    if (line.startsWith('**') && line.endsWith('**')) {
-      return <h3 key={i} className="font-sans font-semibold text-apex-white mt-6 mb-2">{line.replace(/\*\*/g, '')}</h3>;
+    const trimmed = line.trim();
+    if (!trimmed) return null;
+    if (trimmed.startsWith('**') && trimmed.endsWith('**')) {
+      return (
+        <h3 key={i} className="font-sans font-medium text-apex-white text-base mt-8 mb-2">
+          {trimmed.replace(/\*\*/g, '')}
+        </h3>
+      );
     }
-    if (line.startsWith('*') && line.includes('*')) {
-      return <p key={i} className="text-apex-muted text-sm leading-relaxed mb-2 italic">{line.replace(/\*/g, '')}</p>;
+    if (trimmed.startsWith('*') && trimmed.includes(':*')) {
+      const parts = trimmed.split(':*');
+      const title = parts[0].replace(/\*/g, '');
+      const rest = parts.slice(1).join(':*');
+      return (
+        <p key={i} className="text-apex-muted text-sm leading-relaxed mb-3">
+          <strong className="text-apex-white font-medium">{title}:</strong>{rest}
+        </p>
+      );
     }
-    if (line.trim() === '') return <br key={i} />;
-    return <p key={i} className="text-apex-muted text-sm leading-relaxed mb-2">{line}</p>;
+    return (
+      <p key={i} className="text-apex-muted text-sm leading-relaxed mb-3">
+        {trimmed.replace(/\*\*/g, '')}
+      </p>
+    );
   });
 }
 

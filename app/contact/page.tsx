@@ -75,20 +75,20 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Map placeholder */}
+            {/* Studio Map */}
             <div
-              className="relative h-48 bg-apex-surface border border-apex-border flex items-center justify-center"
-              role="img"
-              aria-label="Studio location map — replace with embedded map"
+              className="relative h-60 bg-apex-surface border border-apex-border overflow-hidden group"
+              aria-label="Studio location map in Cheshire"
             >
-              <div className="text-center">
-                <svg className="mx-auto mb-2 text-apex-muted" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-                </svg>
-                <p className="label-uppercase text-apex-muted" style={{ fontSize: '10px' }}>
-                  Map Placeholder<br />
-                  Replace with Google Maps embed
-                </p>
+              <iframe
+                title="Apex Automotive Studio Location"
+                src="https://maps.google.com/maps?q=Cheshire%2C%20UK&t=m&z=12&output=embed&iwloc=near"
+                className="w-full h-full grayscale invert contrast-125 opacity-60 group-hover:opacity-90 transition-opacity duration-500"
+                style={{ border: 0 }}
+                loading="lazy"
+              />
+              <div className="absolute bottom-3 left-3 bg-apex-black/90 px-3 py-1.5 border border-apex-border text-[10px] label-uppercase text-apex-gold">
+                Cheshire Studio · By Appointment
               </div>
             </div>
           </div>
