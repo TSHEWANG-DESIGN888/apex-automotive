@@ -2,6 +2,8 @@ import type { MetadataRoute } from 'next';
 import buildsData from '@/content/builds.json';
 import stockData from '@/content/stock.json';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://apexautomotive.co.uk';
   const now = new Date();
