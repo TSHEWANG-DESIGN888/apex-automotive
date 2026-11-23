@@ -72,9 +72,15 @@ export function Footer() {
 
         {/* Bottom row */}
         <div className="border-t border-apex-border pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <p className="text-xs text-apex-muted">
-            © {year} {siteData.studio.name}. All rights reserved.
-          </p>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+            <p className="text-xs text-apex-muted">
+              © {year} {siteData.studio.name}. All rights reserved.
+            </p>
+            <span className="hidden sm:inline-block w-px h-3 bg-apex-border" aria-hidden="true" />
+            <p className="label-uppercase tracking-[0.2em] text-[10px] text-apex-gold font-medium">
+              Designed by TSEWANG 888
+            </p>
+          </div>
           <div className="flex items-center gap-6">
             {Object.entries(siteData.studio.social).map(([name, url]) => (
               <a
